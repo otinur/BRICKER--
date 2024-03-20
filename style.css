@@ -1,0 +1,851 @@
+/* font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif; */
+
+/* common code and reset code strats here  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    background-color: #002633;
+}
+.red-span{
+    background-color: #C81010;
+}
+.color-1{
+    background-color: #005881;
+}
+.color-2{
+    background-color: #E4A600;
+}
+.color-3{
+    background-color: #00B5A6;
+}
+.color-1-1:hover{
+    background-color: #00B5A6;
+}
+.color-2-2:hover{
+    background-color: #E4A600;
+}
+.color-3-3:hover{
+  
+    background-color: #005881;
+}
+.color-4-4:hover{
+   
+    background-color: #C81010;
+}
+.span-h1{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+ .social-1 a{
+    background-color:#3B5998 ;
+    color: #ffff;
+ }
+ .social-2 a{
+    background-color: #BB0000;
+    color: #ffff;
+ }
+ .social-3 a{
+    background-color:#55ACEE ;
+    color: #ffff;
+ }
+ .social-4 a{
+    background-color: #007BB5;
+    color: #ffff;
+ }
+
+
+/* common code and reset code ends here  */
+
+/* navbar design starts here  */
+
+.nav-bar{
+    background-color: #002633;
+    display: flex;
+    max-width: 100%;
+    height: 100px;
+    justify-content: space-between;
+}
+.main-navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.bars{
+    color: #ffff;
+   
+} 
+#menu-icon{
+    display: none;
+}
+
+.nav-bar-logo img{
+    width: 200px;
+    height: 100px;
+    padding: 1rem;    
+}
+.nav-items{
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    margin: 1.3rem 0;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+.nav-items a{
+    text-decoration: none;
+    color: #7697A2;
+    padding: .8rem;
+    transition: .4s transform;
+    transform: scale(1);
+    font-weight: bold;
+}
+.nav-items a:hover{
+    background-color: #C81010;
+    transform:scale(1.1);
+    color: white;
+    border-radius: .6rem;
+}
+
+/* navbar design ends here  */
+
+/* hero scetion design starts here */
+
+.main-hero{
+    width: 100%;
+    height: 100%;
+}
+.hero-images-main{
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+.hero-images-main img{
+    width: 100%;
+}
+.hero-desc{
+    position: absolute;
+    bottom:5rem;
+    left: .6rem;
+  
+}
+.hero-desc-p1{
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    color: #ffff;
+    padding: .6rem;
+    font-weight: bold;
+}
+.hero-desc-p2{
+    font-size: 1.5rem;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #ffff;
+    color: #000;
+    padding: .6rem;
+}
+
+/* hero scetion design ends here */
+ /* icon and img design strats here */
+
+.icon-and-img{
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0,2fr));
+}
+
+.icon-items{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,2fr));
+    gap: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+.icon-1 a{
+    font-size: 3.8rem;
+    color: #ffff;
+}
+.icon-1{
+   padding: .6rem;
+   border-radius: .3rem;
+}
+.icon-1-p{
+    margin-top: 1rem;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.img-scetion{
+    width: 100%;
+
+}
+.img-scetion img{
+    width: 100%;
+    padding: 1rem;
+}
+
+ /* icon and img design ends here */
+
+
+ /* responsive design strats here */
+
+.main-responsive{
+    padding: 1rem;
+    text-align: center;
+    color: #ffff;
+}
+.responsive-desc{
+    align-items: center;
+    margin: 5rem auto;
+    width: 59%;
+}
+.responsive-desc h1{
+   margin: 2rem 0;
+   font-family: 'Titillium Web', 'sans-serif';
+   font-weight: 100;
+}
+.responsive-desc .span-h1{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.responsive-desc p{
+    text-align: justify;
+    font-family: 'Titillium Web', 'sans-serif';
+    font-size: 1rem;
+    color: #7697A2;
+}
+
+ /* responsive design ends here */
+
+ /* img and desc design strats here */
+
+.main-img-and-desc{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,2fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+.main-img-and-desc-img img{
+    width: 100%;
+}
+.main-img-and-desc-desc{
+    padding: 1rem;
+    color: #ffff;
+    background-color: #005881;
+}
+.main-img-and-desc-desc h1{
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom:2rem ;
+}
+.main-img-and-desc-desc li{
+    font-size: 1rem;
+    font-family: 'Titillium Web', 'sans-serif';
+    color: #7697A2;
+}
+
+ /* img and desc design ends here */
+
+ /* top references  design starts here */
+
+.main-top-references{
+    padding: 1rem;
+    text-align: center;
+    color: #ffff;
+}
+.main-top-references h1{
+    margin: 2rem 0;
+    font-family: 'Titillium Web', 'sans-serif';
+    font-weight: 100;
+    margin-bottom:3rem ;
+}
+.top-items-main{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,2fr));
+    gap: 2rem;
+}
+.top-items-main img{
+    width: 100%;
+}
+
+ /* top references  design ends here */
+
+ /* social media and desc design starts here */
+
+.main-social{
+    padding: 1rem;
+    text-align: center;
+    color: #ffff;
+}
+.social-desc{
+    display: grid;
+    grid-template-columns: repeat(5,minmax(0,5fr));
+    gap: 1rem;
+    
+}
+.social-desc h1{
+    font-family: 'Roboto', sans-serif;
+}
+.social-desc p{
+    font-family: 'Titillium Web', 'sans-serif';
+    color: #7697A2;
+}
+   
+.social-link-1{
+    padding: 1rem;
+   
+}
+.social-link-1 a{
+   
+    padding: 1rem;
+    font-size: 5rem;
+    opacity: 1;
+    transition: .3s;
+}
+.social-link-1 a:hover{
+    opacity: .8;
+}
+
+
+ /* social media and desc design ends here */
+
+ /* footer 1 design starts here */
+
+footer{
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.main-footer{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,4fr));
+    gap: 2rem;
+    text-align: center;
+    
+}
+.main-footer-1 img{
+    width: 100%;
+}
+.main-footer-1 h1{
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+}
+.main-footer-1 p a{
+    font-family: 'Titillium Web', 'sans-serif';
+    color: #7697A2;
+    text-decoration: none;
+    transition: .4s fransform;
+    transform: scale(1);
+   
+}
+.main-footer-1 p{
+    color: #7697A2;
+    text-align: justify;
+}
+.main-footer-1 p a:hover{
+    color: #BB0000;
+    transform: scale(1.1);
+}
+.main-footer-1 .footer-span{
+    color: #BB0000;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0 .5rem;
+}
+
+
+ /* footer 1 design ends here */
+
+/* footer 2 design starts here */
+
+.footer-all-2{
+    text-align: center;
+    color: #7697A2;
+    font-family: 'Titillium Web', 'sans-serif';
+    font-size: .8rem;
+    margin-top:1rem ;
+}
+
+/* footer 2 design ends here */
+
+
+/* about header design starts here */
+
+main{
+    padding: 1rem;
+}
+.about-main{
+    text-align: center;
+}
+.about-main h1{
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+.about-main p{
+    color: #F7FFFF;
+    font-family: 'Titillium Web', 'sans-serif';
+}
+
+/* about header design ends here */
+
+/* about-hero design starts here */
+
+.about-hero{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,2fr));
+    margin-top: 3rem;
+}
+.about-hero-desc{
+    background-color: #ffff;
+}
+.about-hero-desc-1{
+    padding: 1rem;
+}
+.about-hero-desc-1 h3{
+    font-size: 1.5rem;
+    font-family: 'Titillium Web', 'sans-serif';
+    margin-bottom: 1rem;
+    
+}
+.about-hero-desc-1 p{
+    font-size: 1rem;
+    color: #7697A2;
+    font-family: 'Titillium Web', 'sans-serif';
+}
+.about-here-img img{
+    width: 100%;
+}
+
+/* about-hero design ends here */
+/* about fast main design starts here */
+
+.about-fast-main{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,4fr));
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #BB0000;
+    
+}
+.about-fast-main-1 h3{
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: .8rem;
+}
+.about-fast-main-1 h1{
+    font-size: 3rem;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: .8rem;
+}
+.about-fast-main-1 p{
+    color: #d6e0e0;
+    font-family: 'Titillium Web', 'sans-serif';
+}
+
+/* about fast main design ends here */
+
+/* about last main design starts here */
+
+.about-last-main h1{
+    text-align: center;
+    margin: 2rem;
+    color: #ffff;
+    font-family: 'Titillium Web', 'sans-serif';
+    font-weight: 100;
+
+}
+.about-last-main-card-items{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0,6fr));
+    gap: 2rem;
+}
+.about-card img{
+    width: 100%;
+    display: block;
+}
+.about-card-h2{
+    background-color: #BB0000;
+    color: #ffff;
+    padding: .3rem;
+  
+    font-family: 'Roboto', sans-serif;
+}
+.about-card-h2 h2{
+    font-size: 1.1rem;
+    padding: .4rem;
+}
+.about-desc p{
+    color: #BB0000;
+    font-family: 'Titillium Web', 'sans-serif';
+    margin-top:.6rem ;
+}
+
+/* about last main design ends here */
+
+/* gallery main design starts here */
+
+.gallery-main-header{
+    text-align: center;
+
+}
+.gallery-main-header h1{
+    color: #ffff;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem 0;
+}
+.gallery-main-header p{
+    color: #F7FFFF;
+    font-family: 'Titillium Web', 'sans-serif';
+}
+
+/* gallery main design ends here */
+
+/* gallery main pic design starts here */
+
+.gallery-main-pic{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,2fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.gallery-main-pic-1 img{
+    width: 100%;
+}
+
+/* gallery main pic design ends here */
+
+/* contact design starts here */
+
+.contact-main{
+    text-align: center;
+    margin: 2rem 0;
+    color: #ffff;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+.contact-main h1{
+    font-size: 2rem;
+}
+.contact-items{
+    text-align: center;
+    background-color:#f1eeee;
+    border-radius: .4rem;
+    width: 60%;
+    margin: 0 auto;
+}
+.contact-desc{
+    margin: 2rem 0;
+}
+.contact-desc h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    margin: 1rem  0;
+}
+.contact-desc p{
+    color: #7697A2;
+    font-family: 'Titillium Web', 'sans-serif';
+}
+.contact-map iframe{
+    width: 100%;
+    height: 20rem;
+}
+
+/* contact design ends here */
+/* services main design starts hare */
+
+.services-main{
+    text-align: center;
+    margin: 2rem 0;
+}
+.services-main h1{
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.services-main p{
+    color: #F7FFFF;
+    font-family: 'Titillium Web', 'sans-serif';
+}
+
+
+/* services main design ends hare */
+/* services-hero-1 design starts here */
+
+.services-hero-1{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,2fr));
+}
+.services-hero-1-img img{
+    width: 100%;
+}
+.services-desc-all h1{
+    color: #BB0000;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.services-desc-all{
+    padding: 1rem;
+}
+.services-desc-all h2{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+.services-desc-all p{
+    margin: 1rem 0;
+    color: #7697A2;
+    font-family: 'Titillium Web', 'sans-serif';
+    font-size: 1.1rem;
+}
+ .services-color-white{
+    background-color: #ffff;
+    
+}
+.services-color-white h2{
+    color: #000;
+}
+.services-color-green{
+    background-color: #00B5A6;
+}
+.services-color-green h1{
+    color: #ffff;
+}
+.services-color-green p{
+    color:#f1eeee;
+}
+
+
+.btn{
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    border-radius: .4rem;
+    border: none;
+}
+button{
+    background-color: #BB0000;
+    opacity: 1;
+    transition: .3s;
+}
+button:hover{
+    opacity: .8;
+}
+/* services-hero-1 design ends here */
+
+
+/* responsive design strats here  */
+
+@media (max-width:992px){
+    .hero-desc{
+        right: .6rem;
+    }
+    .hero-desc-p2{
+        font-size: 1.1rem;
+        padding: .6rem;
+    }
+    .hero-desc-p1{
+        font-size: 2.5rem;
+        padding: .6rem;
+    }
+    .icon-and-img{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,1fr));
+     }
+     .responsive-desc{
+        width: 77%;
+    }
+    .main-footer{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,2fr));
+        gap: 2rem;
+        
+    }
+    .about-last-main-card-items{
+        grid-template-columns: repeat(3, minmax(0,3fr));   
+    }
+}
+
+@media (max-width:768px){
+    .nav-bar{
+        text-align: center;
+        display:block;
+        height:auto;
+    }
+    
+    .hero-desc-p2{
+        font-size: 1rem;
+        padding: .6rem;
+    }
+    .hero-desc-p1{
+        font-size: 2rem;
+        padding: .6rem;
+    }
+    .responsive-desc{
+        margin: 4rem auto;
+        width: 100%;
+    }
+    .main-img-and-desc{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,1fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .social-desc{
+        display: grid;
+        grid-template-columns: repeat(3,minmax(0,3fr));
+        text-align: center;
+        gap: 1rem;
+        
+    }
+    .about-hero{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        margin-top: 3rem;
+    }
+    .about-fast-main{
+        grid-template-columns: repeat(2,minmax(0,2fr));
+        text-align: center;
+    }
+    .contact-items{
+        width: 70%;
+    }
+
+}
+
+@media (max-width:600px){
+    .nav-bar{
+        text-align: center;
+        display:block;
+        height:auto;
+    }
+    .nav-bar-logo{
+        text-align: center;
+    }
+    .nav-bar{
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .nav-items{
+       display: flex;
+       flex-direction: column;
+    }
+    .hero-desc{
+        bottom: 2rem;
+    }
+    .hero-desc-p2{
+        font-size: .8rem;
+        padding: .4rem;
+    }
+    .hero-desc-p1{
+        font-size: 1.5rem;
+        padding: .4rem;
+    }
+    .responsive-desc h1{
+        font-size: 1rem;
+    }
+    .responsive-desc p{
+        font-size: .7rem;
+    }
+    .social-desc{
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0,2fr));
+        text-align: center;
+        gap: 1rem;
+        
+    }
+    .about-last-main-card-items{
+        grid-template-columns: repeat(2, minmax(0,2fr));   
+    }
+    .contact-items{
+        width: 70%;
+    }
+    .contact-items{
+        width: 80%;
+    }
+    .services-hero-1{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+
+}
+
+@media (max-width:400px){
+    .hero-desc{
+        bottom: .8rem;
+    }
+    .hero-desc-p2{
+        font-size: .5rem;
+        padding: .4rem;
+    }
+    .hero-desc-p1{
+        font-size: 1.2rem;
+        padding: .4rem;
+    }
+    .main-img-and-desc-desc h1{
+        font-size: 2.1rem;
+    }
+    .main-img-and-desc-desc li{
+        font-size: .6rem;  
+    }
+    .main-footer{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,1fr));
+        gap: 2rem;
+        
+    }
+    .about-fast-main{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        text-align: center;
+    }
+    .contact-items{
+        width: 90%;
+    }
+    .services-desc-all h2{
+     
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+}
+
+/* responsive design ends here  */
+
+
+
+
+/* responsive design ends here  */
